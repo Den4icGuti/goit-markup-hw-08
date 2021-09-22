@@ -1,0 +1,10 @@
+.input__label-text{
+
+    @include pre-form-text(normal,12px,calc(14/12),00.01em,10px);
+   
+   }
+
+    .input__comment-text{
+        @include pre-form-text(normal,12px,calc(14/12),00.01em,10px);
+
+    }

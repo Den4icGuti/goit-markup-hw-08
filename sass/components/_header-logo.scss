@@ -1,0 +1,11 @@
+.main-nav__web-studio{
+   
+@include header-logo (block,25px,24px,93px,normal,bold,26px,1.19,var(--black),none);
+
+  
+    font-family: 'Raleway',sans-serif;
+}
+
+.main-nav__web{
+    color: var(--blue);
+}

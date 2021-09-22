@@ -1,0 +1,18 @@
+.check-label{
+    width: 16px;
+    height: 15px;
+    border: solid 2px #000000;
+    border-radius: 2px;
+    margin-right: 7px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   
+}
+
+   .check__checkbox-modal:checked + .text-condition .check-label{
+    background-color: #2196F3;
+    border: none;
+    
+  } 

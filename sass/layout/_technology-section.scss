@@ -1,0 +1,46 @@
+
+.section.section-inner{
+    padding-top: 0px;
+}
+
+
+.technology-inner{
+    display: flex;
+   
+}
+
+.technology-inner__item{
+
+  margin-right: 30px;
+
+  &:last-child{
+   
+    margin-right: 0px;
+ }
+  
+}
+ 
+
+.technology-inner__inner{
+    position: relative;
+}
+
+.technology-inner__text{
+
+ @include  technology-text(bold,14px,1.14,center,00.03em,uppercase);
+
+position: absolute;
+
+bottom: 0px;
+
+width: 370px;
+height: 70px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+

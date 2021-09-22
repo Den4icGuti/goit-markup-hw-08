@@ -1,0 +1,146 @@
+@mixin header-logo($db,$pt,$pb,$mr,$fs,$fw,$fz,$lh,$color,$td) {
+  
+    display: $db;
+    padding-top: $pt;
+    padding-bottom: $pb;
+
+    margin-right: $mr;
+    
+    font-style: $fs;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+    text-decoration: $td;
+}
+
+
+@mixin nav-menu-text($dd,$pt,$pb,$fs,$fw,$fz,$lh,$ls,$color,$td) {
+    display: $dd;
+    padding-top: $pt;
+    padding-bottom: $pb;
+    font-style: $fs;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
+    color: $color;
+    text-decoration: $td;
+    
+}
+
+
+@mixin mail-header($fs,$fw,$fz,$lh,$ls,$td) {
+    
+    font-style: $fs;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-decoration:$td;
+}
+
+
+
+@mixin banner-text($fz,$fw,$lh,$ta,$t-transform) {
+    font-size: $fz;
+    font-weight:$fw;
+    line-height: $lh;
+    text-align: $ta;
+    text-transform: $t-transform;
+}
+
+@mixin fetures-title ($fs,$fw,$fz,$lh,$ls,$t-trnsform) {
+ font-style: $fs;
+font-weight: $fw;
+font-size: $fz;
+line-height: $lh;
+letter-spacing: $ls;
+text-transform: $t-trnsform;
+}
+
+
+@mixin section-disription-text($fs,$fz,$lh,$ls) {
+font-style: $fs;
+font-size: $fz;
+line-height: $lh;
+
+letter-spacing: $ls;
+}
+
+
+
+
+
+@mixin title-text ($fs,$fw,$fz,$lh,$t-align,$ls) {
+    
+  
+    font-style: $fs;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height:$lh;
+    text-align: $t-align;
+    
+    letter-spacing: $ls;
+}
+
+
+@mixin technology-text($fw,$fz,$lh,$t-align,$ls,$t-transform) {
+
+   
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    text-align: $t-align;
+    letter-spacing: $ls;
+    text-transform:$t-transform ;
+}
+
+
+@mixin name-developer($mb,$width,$fs,$fw,$fz,$lh,$t-align,$ls) {
+    
+    margin-bottom: $mb;
+    
+    width: $width;
+    
+    font-style: $fs;
+     font-weight:$fw;
+     font-size: $fz;
+     line-height: $lh;
+     text-align: $t-align;
+     letter-spacing:$ls;
+ 
+}
+
+
+@mixin position($mb,$fs,$fw,$fz,$lh,$t-align,$ls) {
+    margin-bottom: $mb;
+    font-style: $fs;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    text-align: $t-align;
+    letter-spacing: $ls;
+
+}
+
+
+@mixin title-modal($fz,$lh,$t-align,$ls,$m-bottom) {
+    
+    font-size: $fz;
+    line-height: $lh;
+    text-align: $t-align;
+    letter-spacing: $ls;
+    margin-bottom: $m-bottom;
+    
+}
+
+
+
+@mixin pre-form-text($fw,$fz,$lh,$ls,$m-top) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
+    margin-top: $m-top;
+}

@@ -1,0 +1,80 @@
+
+
+ .contacts-header__icon-right {
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+
+
+ .contacts-header__mail-header{
+     display: flex;
+     align-items: center;
+ }
+
+
+ .contacts-header__tel-header{
+    display: flex;
+    align-items: center;
+  }
+
+
+  .contacts-header__item{
+    margin-left: 50px;
+     &:first-child{
+      margin-left: 0px;
+    }
+  }
+ 
+
+
+
+.contacts-header__mail-header{
+  
+  @include mail-header(normal,500,14px,1.14,00.02em,none);
+  
+
+ 
+
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .contacts-header__icon-right,
+  &:focus  .contacts-header__icon-right
+  {
+   fill: var(--blue);
+  }
+  &:hover,
+  &:focus
+  {
+   color: var(--blue);
+  }
+  
+}
+  
+
+
+ .contacts-header__tel-header{
+      
+  @include mail-header(normal,500,14px,1.14,00.02em,none);
+  
+        transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+       &:hover .contacts-header__icon-right,
+       &:focus .contacts-header__icon-right
+       {
+         fill: var(--blue);
+       }
+       
+     
+      &:hover, 
+      &:focus
+      {
+       color: var(--blue)  ;
+      }
+       
+  }
+  
+  
+ 
