@@ -47,6 +47,13 @@ img {
   padding-right: 15px;
 }
 
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
 :root {
   --black: #212121;
   --white:#FFFFFF;

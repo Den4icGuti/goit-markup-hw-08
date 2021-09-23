@@ -51,6 +51,16 @@ img{
  padding-left: 15px;
  padding-right: 15px;
  
+ @media (min-width:480px) {
+     max-width: 480px;
+     margin: 0 auto;
+ }
+//  @media (max-widsth:480px) {
+//     min-width: 768px;
+// }
+// @media (max-width:480px) {
+//     min-width: 768px;
+// }
  } 
 
  
