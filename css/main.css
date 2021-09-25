@@ -911,7 +911,7 @@ img {
   text-transform: uppercase;
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (max-width: 480px) and (max-width: 480px) {
   .banner__text {
     font-size: 26px;
     font-weight: 900;
@@ -962,12 +962,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-@media (max-width: 480px) {
-  .features__text {
-    text-align: center;
-  }
 }
 
 .features__description {
