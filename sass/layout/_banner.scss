@@ -14,13 +14,13 @@
         margin-right: auto;
         margin-left:auto;
 
-      @media  (max-width:480px) {
-          .banner{
+      @media  (min-width:320px)  and (max-width:480px) {
+          
               max-width: 480px;
               padding-bottom: 118px;
               padding-bottom: 198px;
               
-          }
+          
       }
         
         }

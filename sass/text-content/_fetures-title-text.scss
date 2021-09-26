@@ -1,7 +1,7 @@
 .features__text{
    @include fetures-title(normal,bold,14px,1.14,00.03em,uppercase);
 
-   @media (min-width:480px)  {
-   
+   @media (max-width:480px)  {
+   text-align: center;
   }
 }

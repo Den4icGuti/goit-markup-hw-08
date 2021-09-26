@@ -12,6 +12,17 @@
     
     /* padding-bottom: 94px; */
     }
+
+    .presintation-item{
+       
+        flex-basis: calc(100% /  var(--presentation-set) );
+     
+        margin-left: var(--presentation-set);
+        margin-top:   var(--presentation-set);
+      
+     
+       
+     }  
     
     .overlay{
         position: relative;
@@ -49,16 +60,7 @@
     } */
     
     
-    .presintation-item{
-       
-       flex-basis: calc(100% /  var(--presentation-set) );
     
-       margin-left: var(--presentation-set);
-       margin-top:   var(--presentation-set);
-     
-    
-      
-    }
      .inner-text-present{
          padding-top: 20px;
         padding-bottom: 20px;

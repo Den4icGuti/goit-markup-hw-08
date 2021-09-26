@@ -2,7 +2,7 @@
     
 @include banner-text(44px,900,1.36,center,uppercase);
 
-@media(min-width: 480px) and (max-width: 768px) {
+@media(min-width: 320px) and (max-width: 768px) {
   
     @include banner-text(26px,900,1.6,center,uppercase);
 
