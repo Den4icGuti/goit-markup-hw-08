@@ -32,12 +32,12 @@ img{
     padding-bottom: 60px;
 }
 .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-    @media  (max-width:480px) and (max-width:768px){
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // @media  (max-width:480px) and (max-width:768px){
+    //     padding-top: 60px;
+    //     padding-bottom: 60px;
+    // }
     
 }
 
@@ -58,9 +58,9 @@ img{
  @media screen and (min-width: 768px){
     max-width: 768px;
 }
-@media screen and (min-width: 1200px){
-    max-width: 1200px;
-}
+// @media screen and (min-width: 1200px){
+//     max-width: 1200px;
+// }
 
 } 
 
