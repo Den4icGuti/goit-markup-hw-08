@@ -1,26 +1,47 @@
 .banner{
 
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    
     
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-         url(../img/baground-hero/hero.jpg);
+         url(../img/mobile/imghero.jpg);
          
          background-position: center;
          background-repeat: no-repeat;
          background-size: cover;
+         @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+          background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+          url(../img/mobile/imghero@2x.jpg);
+         }
         display: block;
         max-width: 1600px;
         margin-right: auto;
         margin-left:auto;
 
-      @media  (min-width:320px)  and (max-width:480px) {
-          
-              max-width: 480px;
-              padding-bottom: 118px;
-              padding-bottom: 198px;
-              
-          
-      }
-        
+      @media screen and (min-width:768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+         url(../img/tablet/imghero.jpg);
+    }
+    @media screen and (min-width:768px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+      url(../img/tablet/imghero@2x.jpg);
+     }
+        @media  screen and (min-width:1200px) {
+          padding-top: 200px;
+          padding-bottom: 200px;
+          background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+         url(../img/desktop/imghero.jpg);
+
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+           background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+           url(../img/desktop/imghero@2x.jpg);
+          }
+        }
         }

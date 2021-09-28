@@ -1,17 +1,25 @@
-.banner__text{
+.hero-title__text{
     
-@include banner-text(44px,900,1.36,center,uppercase);
+@include banner-text(26px,900,1.62,center,uppercase);
 
-@media(min-width: 320px) and (max-width: 768px) {
-  
+
+margin: 0 auto;
+@media  (min-width:320px) and (min-width:480px) {
     @include banner-text(26px,900,1.6,center,uppercase);
-
+    width: 360px;
 }
 
-@media(min-width: 768px) and (max-width: 1200px){
+@media screen  and (min-width:1200px) {
+    @include banner-text(44px,900,1.36,center,uppercase);
+    width: 696px;
+}
+
+
+
+// @media(min-width: 768px) and (max-width: 1200px){
   
-    @include banner-text(44px,900,1.3,center,uppercase);
+//     @include banner-text(44px,900,1.3,center,uppercase);
 
-}
+// }
 
 }
