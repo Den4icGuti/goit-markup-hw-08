@@ -47,8 +47,7 @@ img {
 
 .container {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -301,7 +300,7 @@ img {
 
 .clients {
   display: flex;
-  margin-top: -30px;
+  margin-bottom: -30px;
 }
 
 @media screen and (min-width: 320px) {
@@ -329,7 +328,7 @@ img {
   .clients__item-clients {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -337,7 +336,7 @@ img {
   .clients__item-clients {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -345,7 +344,7 @@ img {
   .clients__item-clients {
     flex-basis: calc(100% / 6 - 30px);
     margin-left: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -353,14 +352,10 @@ img {
   background: var(--black-grey);
 }
 
-.main-footer {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer-form__form-mail {
   margin-top: 20px;
-  width: 358px;
+  width: 100%;
+  margin: 0 auto;
   height: 50px;
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -368,7 +363,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 20px;
-  margin-left: 93px;
+  margin-top: 60px;
 }
 
 .placeholder-footer {
@@ -738,6 +733,12 @@ img {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .address__web-studio-footer {
+    text-align: center;
+  }
+}
+
 .address__mail-footer {
   display: block;
   margin-top: 9px;
@@ -768,12 +769,9 @@ img {
   color: var(--white);
 }
 
-.inner-icons {
-  margin-left: 70px;
-}
-
 .inner-social {
   display: flex;
+  justify-content: center;
 }
 
 .icon-social {
@@ -795,6 +793,7 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  margin-bottom: 20px;
 }
 
 .footer-social:hover, .footer-social:focus {
@@ -1140,6 +1139,12 @@ img {
   color: var(--white);
 }
 
+@media screen and (max-width: 480px) {
+  .address {
+    text-align: center;
+  }
+}
+
 .address__map-address {
   font-style: normal;
   font-weight: normal;
@@ -1180,6 +1185,14 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 480px) {
+  .inner-icons__title-icons {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+}
+
 .text-condition {
   display: flex;
   align-items: center;
@@ -1207,8 +1220,12 @@ img {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  align-items: baseline;
-  padding-left: 93px;
+}
+
+@media screen and (min-widh: 480px) {
+  .footer-form__title-mail-footer {
+    display: block;
+  }
 }
 
 .technology-title {

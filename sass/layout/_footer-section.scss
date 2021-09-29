@@ -1,11 +1,13 @@
 .footer{
     background: var( --black-grey);
+    // width: 100%;
   }
 
 
   .main-footer{
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+    // width: 100%;
     
 }
   
@@ -13,8 +15,8 @@
 
     margin-top: 20px;
     
-    width: 358px;
-    
+    width: 100%;
+    margin: 0 auto;
     height: 50px;
     
     background-color: #2F303A;
@@ -24,7 +26,8 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 20px;
-    margin-left: 93px;
+    margin-top: 60px;
+    // margin-left: 93px;
     
     
     

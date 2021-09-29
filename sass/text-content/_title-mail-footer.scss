@@ -4,8 +4,16 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    align-items: baseline;
-    padding-left: 93px;
+    // align-items: baseline;
+    // padding-left: 93px;
+    // text-align: center;
+
+    @media screen and (min-widh:480px) {
+        // text-align: center;
+        display: block;
+        // margin-bottom: 20px;
+        // margin-top: 60px;
+    }
     
     }
     

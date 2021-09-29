@@ -1,9 +1,11 @@
 .inner-icons{
-    margin-left: 70px;
+    // margin-left: 70px;
+    
 }
 
 .inner-social{
     display: flex;
+    justify-content: center;
   
 }
 
@@ -11,6 +13,7 @@
 
 .icon-social{
     fill: #ffff;
+    
    
 }
 
@@ -18,6 +21,7 @@
     margin-right: 10px;
     width: 44px;
     height: 44px;
+    
    
 }
 
@@ -31,6 +35,7 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(.17,.67,.83,.67);
+    margin-bottom: 20px;
 
 &:hover,
 &:focus
