@@ -274,7 +274,6 @@ img {
 }
 
 .inner-team__team {
-  width: 100%;
   margin-bottom: 30px;
   background-color: #ffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -282,10 +281,16 @@ img {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .inner-team__team {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .inner-team__team {
+    flex-basis: calc(100% / 4 - 30px);
   }
 }
 
@@ -311,6 +316,7 @@ img {
   .clients {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 
@@ -1085,6 +1091,22 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .our-team {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .our-team {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 
 .item-work__name-developer {

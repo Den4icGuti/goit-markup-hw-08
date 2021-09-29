@@ -3,5 +3,19 @@
 
     
     margin-bottom: 50px;
+
+    @media screen  and (min-width:480px){
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 1.17;
+  }
+
+  @media screen  and (min-width:320px){
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+}
+
+
     
   }
