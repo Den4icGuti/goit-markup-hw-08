@@ -1,4 +1,14 @@
 
+.section-present-work{
+    display: none;
+    @media screen  and (min-width:1200px){
+     display: block;
+    }
+}
+
+
+
+
 .section.section-inner{
     padding-top: 0px;
 }
@@ -6,7 +16,6 @@
 
 .technology-inner{
     display: flex;
-   
 }
 
 .technology-inner__item{
