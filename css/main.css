@@ -1251,11 +1251,6 @@ img {
   /* padding-bottom: 94px; */
 }
 
-.presintation-item {
-  flex-basis: calc(100% /  var(--presentation-set));
-  margin-left: var(--presentation-set);
-}
-
 .overlay {
   position: relative;
   overflow: hidden;
@@ -1316,7 +1311,6 @@ img {
 
 .link-presentation {
   text-decoration: none;
-  width: 370px;
   display: block;
 }
 
