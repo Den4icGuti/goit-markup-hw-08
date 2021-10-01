@@ -24,10 +24,6 @@ li {
   margin: 0;
 }
 
-img {
-  display: block;
-}
-
 .section-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -491,6 +487,11 @@ img {
 .item-work {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team-thumb {
+  display: block;
+  width: 100%;
 }
 
 .clients {
