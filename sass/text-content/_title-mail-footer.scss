@@ -5,10 +5,15 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     align-items: baseline;
-    padding-left: 93px;
+    // padding-left: 93px;
     text-align: center;
+    display: block; 
 
-    
+      
+    @media screen and (min-width:320px) {
+        text-align: center;
+        padding-top: 60px;
+    }
     
     }
     

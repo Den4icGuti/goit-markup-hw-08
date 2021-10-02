@@ -52,6 +52,12 @@ li {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -191,7 +197,7 @@ li {
 .mob-menu .container {
   position: relative;
   height: 100%;
-  min-height: 500px;
+  max-height: 500px;
 }
 
 .mob-menu-bottom {
@@ -244,6 +250,7 @@ li {
 
 .social-list-menu {
   display: flex;
+  justify-content: center;
   margin-left: 40px;
   padding-top: 64px;
   padding-bottom: 48px;
@@ -552,16 +559,9 @@ img {
   background: var(--black-grey);
 }
 
-.main-footer {
-  display: flex;
-  align-items: baseline;
-  width: 100%;
-}
-
 .footer-form__form-mail {
   margin-top: 20px;
   width: 100%;
-  margin: 0 auto;
   height: 50px;
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -569,8 +569,13 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 20px;
-  margin-top: 60px;
-  margin-left: 93px;
+}
+
+@media screen and (min-width: 320px) {
+  .footer-form__form-mail {
+    width: 100%;
+    max-width: 450px;
+  }
 }
 
 .placeholder-footer {
@@ -1048,6 +1053,43 @@ img {
   color: var(--white);
 }
 
+.inner-address {
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .inner-address {
+    text-align: center;
+  }
+}
+
+.address__map-address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+.address__mail-footer {
+  display: block;
+  margin-top: 9px;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-footer:hover
+.mail-footer:focus {
+  color: var(--white);
+}
+
 .address__tel-footer {
   display: block;
   margin-top: 9px;
@@ -1064,9 +1106,11 @@ img {
   color: var(--white);
 }
 
-.inner-social {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 320px) {
+  .inner-social {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .icon-social {
@@ -1079,9 +1123,11 @@ img {
   height: 44px;
 }
 
+.inner-social__item:last-child {
+  margin-right: 0px;
+}
+
 .footer-social {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1145,6 +1191,15 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-left: 12px;
   position: relative;
+}
+
+@media screen and (min-width: 320px) {
+  .subscribe {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .icon-footer {
@@ -1277,12 +1332,15 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.presentation {
+  margin-top: calc(-1 * var(--presentation-set));
+}
+
 @media screen and (min-width: 768px) {
   .presentation {
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--presentation-set));
-    margin-top: calc(-1 * var(--presentation-set));
   }
 }
 
@@ -1518,28 +1576,33 @@ img {
   letter-spacing: 0.03em;
 }
 
-.address {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--white);
+.inner-social {
+  display: flex;
 }
 
-.address__map-address {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  flex-shrink: 0;
+.icon-social {
+  fill: #ffff;
 }
 
-.inner-address {
-  flex-shrink: 0;
+.inner-social__item {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.footer-social:hover, .footer-social:focus {
+  background-color: var(--blue);
 }
 
 .claints-title {
@@ -1565,7 +1628,15 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+  display: block;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .inner-icons__title-icons {
+    text-align: center;
+    padding-top: 60px;
+  }
 }
 
 .text-condition {
@@ -1624,8 +1695,15 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   align-items: baseline;
-  padding-left: 93px;
   text-align: center;
+  display: block;
+}
+
+@media screen and (min-width: 320px) {
+  .footer-form__title-mail-footer {
+    text-align: center;
+    padding-top: 60px;
+  }
 }
 
 .technology-title {

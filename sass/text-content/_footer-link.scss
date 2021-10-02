@@ -1,37 +1,42 @@
-.address{
+.inner-icons{
+    // margin-left: 70px;
+}
 
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-
-    text-decoration: none;
-
-    color: var(--white);
-
-  
-   
+.inner-social{
+    display: flex;
   
 }
 
-.address__map-address{
-    
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
 
-    text-decoration: none;
 
+.icon-social{
+    fill: #ffff;
    
+}
 
-  flex-shrink: 0;
+.inner-social__item{
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
    
 }
 
 
-.inner-address{
-    flex-shrink: 0;
+.footer-social{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(.17,.67,.83,.67);
+
+&:hover,
+&:focus
+{
+    background-color: var(--blue);
 }
+
+}
+
