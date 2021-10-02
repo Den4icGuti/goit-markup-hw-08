@@ -24,10 +24,6 @@ li {
   margin: 0;
 }
 
-img {
-  display: block;
-}
-
 .section-footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -494,7 +490,7 @@ img {
 }
 
 .team-thumb {
-  display: block;
+  width: 100%;
 }
 
 .clients {
@@ -1251,6 +1247,34 @@ img {
   /* padding-bottom: 94px; */
 }
 
+@media screen and (min-width: 768px) {
+  .presentation {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--presentation-set));
+    margin-top: calc(-1 * var(--presentation-set));
+    width: 100%;
+  }
+}
+
+.presintation-item {
+  /* padding-bottom: 94px; */
+}
+
+@media screen and (min-width: 480px) {
+  .presintation-item {
+    margin-top: var(--presentation-set);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .presintation-item {
+    flex-basis: calc(100%   /  2 - 30px);
+    margin-left: var(--presentation-set);
+    margin-top: var(--presentation-set);
+  }
+}
+
 .overlay {
   position: relative;
   overflow: hidden;
@@ -1311,7 +1335,7 @@ img {
 
 .link-presentation {
   text-decoration: none;
-  display: block;
+  width: 100%;
 }
 
 .link-presentation:hover .top-text,
@@ -1322,6 +1346,11 @@ img {
 .link-presentation:hover,
 .link-presentation:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .hero-title__text {
