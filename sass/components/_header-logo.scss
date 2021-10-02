@@ -11,6 +11,9 @@
     @media screen and (min-width:320px) {
         @include header-logo (block,14px,14px,93px,normal,bold,26px,1.19,var(--black),none);
     }
+    @media screen and (min-width:768px) {
+        @include header-logo (block,14px,14px,88px,normal,bold,26px,1.19,var(--black),none);
+    }
 }
 
 .main-nav__web{

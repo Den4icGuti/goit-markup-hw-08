@@ -558,6 +558,22 @@ img {
   background: var(--black-grey);
 }
 
+@media screen and (min-width: 768px) {
+  .main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-footer {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .footer-form__form-mail {
   margin-top: 20px;
   width: 100%;
@@ -574,6 +590,22 @@ img {
   .footer-form__form-mail {
     width: 100%;
     max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__form-mail {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__form-mail {
+    max-width: 358px;
   }
 }
 
@@ -666,6 +698,21 @@ img {
     padding-top: 14px;
     padding-bottom: 14px;
     margin-right: 93px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--black);
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav__web-studio {
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-right: 88px;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -1032,12 +1079,6 @@ img {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 480px) {
-  .address__web-studio-footer {
-    text-align: center;
-  }
-}
-
 .address__mail-footer {
   display: block;
   margin-top: 9px;
@@ -1075,7 +1116,7 @@ img {
 
 .address__mail-footer {
   display: block;
-  margin-top: 9px;
+  padding-top: 9px;
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
@@ -1091,7 +1132,7 @@ img {
 
 .address__tel-footer {
   display: block;
-  margin-top: 9px;
+  padding-top: 9px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1103,6 +1144,10 @@ img {
 
 .address__tel-footer:hover, .address__tel-footer:focus {
   color: var(--white);
+}
+
+.inner-icons {
+  margin-left: 70px;
 }
 
 @media screen and (min-width: 320px) {
@@ -1194,10 +1239,9 @@ img {
 
 @media screen and (min-width: 320px) {
   .subscribe {
+    display: block;
     margin: 0 auto;
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
   }
 }
 
@@ -1206,6 +1250,10 @@ img {
   position: absolute;
   top: 13px;
   right: 28px;
+}
+
+.buttons-group {
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 320px) {
@@ -1221,6 +1269,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    margin-top: 50px;
   }
 }
 
@@ -1628,7 +1677,7 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   display: block;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 320px) {
