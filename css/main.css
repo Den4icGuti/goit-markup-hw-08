@@ -149,6 +149,8 @@ li {
   border: none;
   width: 40px;
   height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -183,6 +185,7 @@ li {
   top: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
 }
 
 .mob-menu .container {
@@ -242,8 +245,8 @@ li {
 .social-list-menu {
   display: flex;
   margin-left: 40px;
-  margin-top: 64px;
-  margin-bottom: 48px;
+  padding-top: 64px;
+  padding-bottom: 48px;
 }
 
 .social-list-menu__item {
@@ -489,7 +492,9 @@ li {
   padding-bottom: 30px;
 }
 
-.team-thumb {
+img {
+  display: block;
+  height: auto;
   width: 100%;
 }
 
@@ -634,6 +639,21 @@ li {
   color: var(--black);
   text-decoration: none;
   font-family: 'Raleway',sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+  .main-nav__web-studio {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 93px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--black);
+    text-decoration: none;
+  }
 }
 
 .main-nav__web {

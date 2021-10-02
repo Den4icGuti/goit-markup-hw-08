@@ -1,5 +1,6 @@
 .header{
     border-bottom:  1px solid #ECECEC ;
+    // height: auto;
    
  }
  
@@ -37,6 +38,7 @@
     @media screen and (min-width:1200px) {
         display: flex;
         flex-direction: row;
+        
     }
    
    
@@ -60,10 +62,15 @@
       border: none;
       width: 40px;
       height: 40px;
+      display: flex;
+      align-items: center;
 
+    
       @media screen and (min-width:768px) {
           display: none;
       }
+
+   
   }
 
   .close-mob-menu{
@@ -98,7 +105,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-   
+   z-index: 1;
     .container{
         position: relative;
          height: 100%;
@@ -164,8 +171,8 @@ letter-spacing: 0.02em;
 .social-list-menu{
     display: flex;
     margin-left: 40px;
-    margin-top: 64px;
-    margin-bottom: 48px;
+    padding-top: 64px;
+   padding-bottom:  48px;
 }
 
 .social-list-menu__item{
