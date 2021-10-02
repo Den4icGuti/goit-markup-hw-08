@@ -8,6 +8,9 @@
     @media screen and (min-width:480px) {
         @include header-logo (block,16px,16px,93px,normal,bold,26px,1.19,var(--black),none);
     }
+    @media screen and (min-width:320px) {
+        @include header-logo (block,14px,14px,93px,normal,bold,26px,1.19,var(--black),none);
+    }
 }
 
 .main-nav__web{
