@@ -22,7 +22,7 @@
  .main-nav{
     display: flex;
     align-items: center;
-justify-content: space-between;
+ justify-content: space-between;
 }
 
 
@@ -171,7 +171,8 @@ letter-spacing: 0.02em;
 .social-list-menu{
     display: flex;
     justify-content: center;
-    margin-left: 40px;
+    flex-wrap: wrap;
+    padding-left: 40px;
     padding-top: 64px;
    padding-bottom:  48px;
 }

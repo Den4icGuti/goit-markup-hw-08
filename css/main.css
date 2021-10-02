@@ -249,7 +249,8 @@ header {
 .social-list-menu {
   display: flex;
   justify-content: center;
-  margin-left: 40px;
+  flex-wrap: wrap;
+  padding-left: 40px;
   padding-top: 64px;
   padding-bottom: 48px;
 }
@@ -1742,6 +1743,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .window-form {
+    width: 100%;
     width: 450px;
     height: 609px;
   }
