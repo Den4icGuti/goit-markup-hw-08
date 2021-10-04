@@ -1,12 +1,12 @@
 .presentation{
   
     // width: 100%;
-    margin-top: calc(-1 * var(--presentation-set));
+    
      @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
         margin-left: calc(-1 * var(--presentation-set));
-       
+        margin-top: calc(-1 * var(--presentation-set));
      
     }
     
@@ -23,7 +23,7 @@
     .presintation-item{
 
 
-      margin-top: var(--presentation-set);
+     
   
     
     @media screen and (min-width:768px) {
@@ -42,9 +42,17 @@
     
     }
     
+    @media screen and (min-width:480px) {
+   
+    
+    &:not(:first-child)
+    {
+        margin-top: var(--presentation-set);
+    }
     
        
      }  
+    }
     
     .overlay{
         position: relative;

@@ -1,24 +1,21 @@
 .footer{
   background: var( --black-grey);
- 
 }
 
 
-
-
 .main-footer{
-  @media screen and (min-width:768px) {
+ 
+  @media screen and(min-width:768px) {
     display: flex;
-    
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
-    margin-bottom: 60px;
   }
-  @media screen and (min-width:1200px) {
-    display: flex;
-    align-items: baseline;
+
+  @media screen and(min-width:1200px) {
+   display: flex;
+  align-items: baseline;
   }
-  
   
 }
 
@@ -26,8 +23,7 @@
 
   margin-top: 20px;
   
-  width: 100%;
-  
+ 
   height: 50px;
   
   background-color: #2F303A;
@@ -37,33 +33,26 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 20px;
-  // margin-left: 93px;
+ 
   
+  @media screen and (min-width:320px) {
+    width: 100%;
 
-
-@media screen and(min-width:320px)   {
-  width: 100%;
-  max-width: 450px;
-}
-@media screen and(min-width:768px)   {
- display: block;
-  width: 100%;
-  max-width: 450px;
-  margin: 0 auto;
-  margin-top: 20px;
- 
- 
-}
-
-@media screen and(min-width:1200px)   {
+  }
+   @media screen and (min-width:768px) {
+     width: 450px;
   
     
-   max-width: 358px;
-  
-}
-  
-  
   }
+  @media screen and (min-width:1200px) {
+    width: 358px;
+   margin-left: 93px;
+ 
+   
+ }
+  }
+
+  
   
   
  .placeholder-footer{
