@@ -1,11 +1,14 @@
 .inner-address{
     flex-shrink: 0;
 
-    @media screen and (min-width:320px) {
+    @media screen and (min-width:320px) and (max-width:1200px) {
         text-align: center;
+        padding-bottom: 60px;
     }
-    
 
+    
+  
+  
 
 }
 .address__map-address{
